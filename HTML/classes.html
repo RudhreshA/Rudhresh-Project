@@ -1,0 +1,37 @@
+<html>
+ <head>
+    <title>LEARNING HTML</title>
+ <style>
+.city{
+    background-color: burlywood;
+    color: black;
+    border: 2px solid navy;
+    margin: 20px;
+    padding: 20px;
+
+
+            
+        }
+    </style>
+   </head>
+    <body>
+        <button onclick="myFunction()">Hide element</button>
+        <div class="city">
+            <h2>NAIROBI</h2>
+            <p>CAPITAL CITY OF KENYA</p>
+        </div>
+        <br>
+        <h2>WE KNOW ABOUT<span class="city">MOSCOW IS THE</span> CAPITAL OF RUSSIA </h2>
+        <script>
+            function myFunction() {
+                var x =document.getElementsByClassName("city");
+                for (var i=0 ; i<x.length; i++){
+                    x[i].style.display="none";
+                }
+                
+            }
+        </script>
+        <a href="home using list2.html">BACK TO HOME</a>
+
+    </body>
+</html>
